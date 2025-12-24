@@ -1,10 +1,6 @@
-body {
-  font-family: sans-serif;
-}
+body { font-family: sans-serif; }
 
-table {
-  border-collapse: collapse;
-}
+table { border-collapse: collapse; }
 
 th, td {
   border: 1px solid #999;
@@ -12,38 +8,18 @@ th, td {
   height: 80px;
   text-align: center;
   font-size: 12px;
-}
-
-th {
-  background: #eee;
-}
-
-.cell {
-  cursor: pointer;
   white-space: pre-line;
 }
 
-.win {
-  background: #c8f7c5;
-}
+th { background: #eee; }
 
-.lose {
-  background: #f7c5c5;
-}
+.cell { cursor: pointer; }
 
-.empty {
-  background: #fff;
-}
 .modal {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top:0; left:0; width:100%; height:100%;
   background: rgba(0,0,0,0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; justify-content: center; align-items: center;
 }
 
 .modal-content {
@@ -55,6 +31,4 @@ th {
   font-size: 13px;
 }
 
-.modal button {
-  margin-top: 8px;
-}
+.modal button { margin-top: 8px; }

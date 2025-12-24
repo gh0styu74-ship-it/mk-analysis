@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>マリオカート 勝敗分析</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>マリオカート 勝敗分析</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>マリオカート 勝敗理由マトリクス</h1>
-<p>左：スタート　上：ゴール（クリックで順位を追加）</p>
+<h1>マリオカート 勝敗分析</h1>
 
+<div>
+  <label>スタートコース：
+    <select id="startSelect"></select>
+  </label>
+  <label>ゴールコース：
+    <select id="goalSelect"></select>
+  </label>
+  <label>順位：
+    <input type="number" id="rankInput" min="1" max="24">
+  </label>
+  <label>勝因：
+    <input type="text" id="winReason">
+  </label>
+  <label>敗因：
+    <input type="text" id="loseReason">
+  </label>
+  <button id="addBtn">記録</button>
+</div>
+
+<h2>記録表</h2>
 <div id="matrix"></div>
 
 <script src="script.js"></script>
